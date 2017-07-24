@@ -14,19 +14,19 @@ Garrick's updates
   July 24, 2017
     found out ryan was not back in the bay area and had to remote communicate
 
-  July 25, 2016
+  July 25, 2017
 
-  July 26, 2016
+  July 26, 2017
 
-  July 27, 2016
+  July 27, 2017
 
-  July 28, 2016
+  July 28, 2017
 
-  July 29, 2016
+  July 29, 2017
 
-  July 30, 2016
+  July 30, 2017
 
-  July 31, 2016
+  July 31, 2017
 
 
 
@@ -36,16 +36,16 @@ Ryan's updates
 July 24, 2017
   delayed in Atlanta and had to remote work while returning to SF
 
-July 25, 2016
+July 25, 2017
 
-July 26, 2016
+July 26, 2017
 
-July 27, 2016
+July 27, 2017
 
-July 28, 2016
+July 28, 2017
 
-July 29, 2016
+July 29, 2017
 
-July 30, 2016
+July 30, 2017
 
-July 31, 2016
+July 31, 2017

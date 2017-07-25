@@ -2,7 +2,7 @@
 
 Bugs
 <!-- issue, time stamp, was issue solved?-->
-error code 000, 7-24-2017, issue not solved.
+
 
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -16,6 +16,9 @@ Garrick's updates
     drew mock-up of possible designs
 
   July 25, 2017
+  1. getting data base routing up
+  2. getting form ready
+  3. getting all calls
 
   July 26, 2017
 

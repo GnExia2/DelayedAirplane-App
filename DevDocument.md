@@ -28,10 +28,10 @@ Sprint 2
     b. CSS styling for attractiveness
 
   2. work on CRUD for Index.html
-      a. GET
-      b. CREATE
-      c. UPDATE
-      d. DELETE
+      a. GET working for front-end and back-end
+      b. CREATE working for making new delays on front-end
+      c. UPDATE delays working for delays
+      d. DELETE delays once conditions are met
 
   3. update index.html form include all parameters
       a. background image
@@ -49,10 +49,10 @@ Sprint 3
       a. basic layout for look and feel
 
   2. work on CRUD for ThingstoDo.html
-      a. GET
-      b. UPDATE
-      c. CREATE
-      d. DELETE
+      a. GET sfo API and display to page
+      b. CREATE - tips for other travelers
+      c. UPDATE tips when a info is no longer current
+      d. DELETE tips when info is no longer relevant
 
 
       <!-- stretch goal  -->

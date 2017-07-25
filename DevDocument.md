@@ -82,20 +82,26 @@ Bugs
 Garrick's updates
 
 July 24, 2017
-created folders and files for base dev
-drew mock-up of possible designs
+  created folders and files for base dev
+  drew mock-up of possible designs
 
 July 25, 2017
+  2:30pm - ran into some bugs of somehow having a project within project - solved
 
 July 26, 2017
 
+
 July 27, 2017
+
 
 July 28, 2017
 
+
 July 29, 2017
 
+
 July 30, 2017
+
 
 July 31, 2017
 

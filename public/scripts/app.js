@@ -5,6 +5,7 @@ $(document).ready(function(){
   // url: '/api/delays',
   // success: handleSuccess,
   // error: handleError
+
 });
 
 // function handleSuccess(data){

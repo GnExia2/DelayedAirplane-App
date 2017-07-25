@@ -4,10 +4,11 @@
   <head>
     <!-- stylesheets -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/public/styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <!-- scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/public/scripts/app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/app.js"></script>
 
     <meta charset="utf-8">
     <title></title>
@@ -39,37 +40,44 @@
                 <legend>Add Delayed Flight</legend>
 
                 <!-- Text input-->
-                <div class="form-group">
-                  <label class="col-md-4 control-label" for="name">Airline</label>
-                    <div class="col-md-4">
-                      <input id="name" name="name" type="text" placeholder="" class="form-control input-md" required="">
+                <div class="container">
 
-                    </div>
-                </div>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Airline
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Southwest</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delta</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">United</a></li>
+      </div>
 
-                <!-- Text input-->
-                <div class="form-group">
-                  <label class="col-md-4 control-label" for="artistName">Flight Number</label>
-                  <div class="col-md-4">
-                  <input id="textinput" name="artistName" type="text" placeholder="" class="form-control input-md">
 
-                  </div>
-                </div>
 
-                <!-- Text input-->
-                <div class="form-group">
-                  <label class="col-md-4 control-label" for="releaseDate">From/To</label>
-                  <div class="col-md-4">
-                  <input id="releaseDate" name="releaseDate" type="text" placeholder="1992" class="form-control input-md">
 
-                  </div>
-                </div>
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="artistName">Flight Number</label>
+      <div class="col-md-4">
+        <input id="textinput" name="artistName" type="text" placeholder="" class="form-control input-md">
 
-                <!-- Text input-->
-                <div class="form-group">
-                  <label class="col-md-4 control-label" for="releaseDate">Status</label>
-                  <div class="col-md-4">
-                  <input id="releaseDate" name="releaseDate" type="text" placeholder="1992" class="form-control input-md">
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="releaseDate">From/To</label>
+      <div class="col-md-4">
+        <input id="releaseDate" name="releaseDate" type="text" placeholder="1992" class="form-control input-md">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="releaseDate">Status</label>
+      <div class="col-md-4">
+        <input id="releaseDate" name="releaseDate" type="text" placeholder="1992" class="form-control input-md">
+
 
                   <!-- Text input-->
                   <div class="form-group">

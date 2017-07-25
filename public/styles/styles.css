@@ -21,3 +21,19 @@
 .albumData, .edit-album {
   display: inline;
 }
+#Airline{
+  margin-left: 400px;
+  margin-bottom: 15px;
+}
+
+.delayForm{
+  margin-left: 400px;
+  margin-bottom: 15px;
+
+}
+.submitButton{
+  margin-left: 100px;
+}
+li{
+  list-style-type: none;
+}

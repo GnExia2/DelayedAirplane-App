@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="styles/styles.css">
     <!-- scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<<<<<<< HEAD
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+=======
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+>>>>>>> fa9023b7a1bb242815884da9dffc1bfd68f76983
     <script src="scripts/app.js"></script>
 
     <meta charset="utf-8">
-    <title></title>
+    <title>Delayed Flight App</title>
   </head>
   <body>
 
@@ -41,6 +47,7 @@
 
                 <!-- Text input-->
                 <div class="container">
+<<<<<<< HEAD
 
     <div class="dropdown">
       <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Airline
@@ -52,6 +59,16 @@
       </div>
 
 
+=======
+
+
+    <select name="Airline" id="Airline">
+      <option value="">Airline</option>
+      <option value="Delta">Delta</option>
+      <option value="Southwest">southwest</option>
+      <option value="United">United</option>
+    </select>
+>>>>>>> fa9023b7a1bb242815884da9dffc1bfd68f76983
 
 
     <!-- Text input-->
@@ -64,6 +81,7 @@
     </div>
 
     <!-- text input -->
+<<<<<<< HEAD
     <div class="dropdown">
       <button class="btn btn-primary dropdown-toggle" id="menu2" type="button" data-toggle="dropdown">From
       <span class="caret"></span></button>
@@ -89,11 +107,37 @@
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a>Delayed</li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a>Cancelled</li>
           </div>
+=======
+    <select class="delayForm" name="From" id="From">
+      <option value="">From</option>
+    <option value="SFO">SFO</option>
+    <option value="ATL">ATL</option>
+    <option value="ORD">ORD</option>
+    </select>
+    <li></li>
+      <!-- text input -->
+      <select class="delayForm" name="To" id="To">
+        <option value="">To</option>
+      <option value="SFO">SFO</option>
+      <option value="ATL">ATL</option>
+      <option value="ORD">ORD</option>
+      </select>
+      <li></li>
+
+        <!-- text input -->
+        <select class="delayForm" name="Status" id="Status">
+        <option value="">Status</option>
+        <option value="Delayed">Delayed</option>
+        <option value="Cancelled">Cancelled</option>
+        </select>
+        <li></li>
+>>>>>>> fa9023b7a1bb242815884da9dffc1bfd68f76983
 
                   <!-- Text input-->
                   <div class="form-group">
                     <label class="col-md-4 control-label" for="releaseDate">Time Delayed</label>
                     <div class="col-md-4">
+<<<<<<< HEAD
                     <input id="releaseDate" name="releaseDate" type="text" placeholder="1992" class="form-control input-md">
 
                     <select name="cmbitems2" id="cmbitems2">
@@ -101,13 +145,22 @@
                     <option value="green">green</option>
                     <option value="red">red</option>
                     </select> 
+=======
+                    <input id="releaseDate" name="timeDelayed" type="text" placeholder="" class="form-control input-md">
+                  </div>
+                </div>
+>>>>>>> fa9023b7a1bb242815884da9dffc1bfd68f76983
 
 
                 <!-- Button -->
                 <div class="form-group">
+<<<<<<< HEAD
                   <label class="col-md-4 control-label" for="singlebutton">/label>
+=======
+                  <label class="col-md-4 control-label" for="singlebutton"></label>
+>>>>>>> fa9023b7a1bb242815884da9dffc1bfd68f76983
                   <div class="col-md-4">
-                    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+                    <button id="singlebutton" name="singlebutton" class="btn btn-primary  submitButton">Submit</button>
                   </div>
                 </div>
               </fieldset>
@@ -128,49 +181,11 @@
         </div>
       </div>
       <!-- albums! -->
-      <div id='albums'>
+      <div id='flights'>
 
       </div>
     </section>
 
-    <!-- begin songModal: this is not visible until you call .modal() on it -->
-    <div class="modal fade" tabindex="-1" role="dialog" id="songModal">
-      <form name="modalForm" id="modalForm" method="POST" action="javascript.void();">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Create Song</h4>
-          </div>
-          <div class="modal-body">
-
-            <fieldset class='form-horizontal'>
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="songName">Song Name</label>
-                <div class="col-md-4">
-                  <input id="songName" name="name" type="text" placeholder="" class="form-control input-md" required="">
-                </div>
-              </div>
-
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="trackNumber">Track Number</label>
-                <div class="col-md-4">
-                  <input id="trackNumber" name="trackNumber" type="text" placeholder="" class="form-control input-md">
-                </div>
-              </div>
-            </fieldset>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id="saveSong">Save changes</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </form>
-    </div><!-- /.modal -->
 
     <footer>
       <!-- contact info -->

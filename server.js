@@ -1,5 +1,7 @@
+'use strict';
+
 // requires express & body-parser to be used in our application
-let express = require('express'),
+var express = require('express'),
   bodyParser = require('body-parser');
 
   // connect to models

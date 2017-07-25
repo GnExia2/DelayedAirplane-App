@@ -14,61 +14,146 @@
   </head>
   <body>
 
-    <div class="container">
-      <h1>Flight Delay App</h1>
-    </div>
-
     <!-- form to input new flight/delay -->
-    <form id="frm1" action="/action_page.php">
-      Airline: <input type="text" name="fname"><br>
-      Flight Number: <input type="text" name="lname"><br><br>
-      From/To: <input type="text" name="lname"><br><br>
-      Status: <input type="text" name="lname"><br><br>
-      Time Delayed: <input type="text" name="lname"><br><br>
-      <input type="button" onclick="myFunction()" value="Submit">
-    </form>
+
     <!-- flight list -->
-    <section class="container">
-     <div class="row">
-       <div class="col-md-10 col-md-offset-1">
-         <h2>Flights</h2>
-       </div>
-     </div>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Flight Delays</h1>
+        <p></p>
+      </div>
+    </div>
      <!-- flights! -->
-     <div id='flights'>
-       <div class="row album">
-
-            <div class="col-md-10 col-md-offset-1">
-              <div class="panel panel-default">
-                <div class="panel-body">
 
 
-                <!-- begin flight internal row -->
-                  <div class='row'>
-                    <div class="">
-                      <img src="">
+    <!-- BEGIN FORM SAMPLE -->
+
+        <section id='album-form' class="container">
+          <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+
+            <form class="form-horizontal">
+              <fieldset>
+
+                <!-- Form Name -->
+                <legend>Add Delayed Flight</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="name">Airline</label>
+                    <div class="col-md-4">
+                      <input id="name" name="name" type="text" placeholder="" class="form-control input-md" required="">
+
                     </div>
+                </div>
 
-                    <div class="col-md-9 col-xs-12">
-                      <ul class="list-group">
-                        <li class="list-group-item">
-                          <h4 class='inline-header'></h4>
-                          <span class='Airline'></span>
-                        </li>
-
-                        <li class="list-group-item">
-                          <h4 class='inline-header'></h4>
-                          <span class='From/To'></span>
-                        </li>
-
-                        <li class="list-group-item">
-                          <h4 class='inline-header'></h4>
-                          <span class='Status'></span>
-                        </li>
-                      </ul>
-                    </div>
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="artistName">Flight Number</label>
+                  <div class="col-md-4">
+                  <input id="textinput" name="artistName" type="text" placeholder="" class="form-control input-md">
 
                   </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="releaseDate">From/To</label>
+                  <div class="col-md-4">
+                  <input id="releaseDate" name="releaseDate" type="text" placeholder="1992" class="form-control input-md">
+
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="releaseDate">Status</label>
+                  <div class="col-md-4">
+                  <input id="releaseDate" name="releaseDate" type="text" placeholder="1992" class="form-control input-md">
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="releaseDate">Time Delayed</label>
+                    <div class="col-md-4">
+                    <input id="releaseDate" name="releaseDate" type="text" placeholder="1992" class="form-control input-md">
+
+                <!-- Textarea -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="genres">Genres (separated by commas)</label>
+                  <div class="col-md-4">
+                    <textarea class="form-control" id="genres" name="genres">rock, pop</textarea>
+                  </div>
+                </div>
+
+
+                <!-- Button -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="singlebutton">Save Album</label>
+                  <div class="col-md-4">
+                    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          </div>
+        </section>
+
+         <!--   END FORM SAMPLE -->
+
+
+
+
+    <section class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h2>Albums</h2>
+        </div>
+      </div>
+      <!-- albums! -->
+      <div id='albums'>
+
+      </div>
+    </section>
+
+    <!-- begin songModal: this is not visible until you call .modal() on it -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="songModal">
+      <form name="modalForm" id="modalForm" method="POST" action="javascript.void();">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Create Song</h4>
+          </div>
+          <div class="modal-body">
+
+            <fieldset class='form-horizontal'>
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="songName">Song Name</label>
+                <div class="col-md-4">
+                  <input id="songName" name="name" type="text" placeholder="" class="form-control input-md" required="">
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="trackNumber">Track Number</label>
+                <div class="col-md-4">
+                  <input id="trackNumber" name="trackNumber" type="text" placeholder="" class="form-control input-md">
+                </div>
+              </div>
+            </fieldset>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="saveSong">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </form>
+    </div><!-- /.modal -->
 
     <footer>
       <!-- contact info -->

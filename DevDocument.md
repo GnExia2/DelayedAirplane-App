@@ -12,7 +12,8 @@ include everything you did that day, solo or group.
 Garrick's updates
 
   July 24, 2017
-    found out ryan was not back in the bay area and had to remote communicate
+    created folders and files for base dev
+    drew mock-up of possible designs
 
   July 25, 2017
 

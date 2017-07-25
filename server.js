@@ -1,5 +1,3 @@
-'use strict';
-
 // requires express & body-parser to be used in our application
 var express = require('express'),
   bodyParser = require('body-parser');
@@ -20,10 +18,40 @@ var express = require('express'),
   app.use(bodyParser.urlencoded({ extended:true }));
 
 
+  // routes
+
   app.get('/', function (req, res) {
     res.sendFile('views/index.html', {root:__dirname});
-      console.log(__dirname);
+    console.log(__dirname);
   });
+
+  app.get('/api', controllers.api.index);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -20,6 +20,8 @@ Users can view flights based on created displays
 
 Users can change flight status based on actual delay or on-time
 
+User can add tips for given airport
+
 DATABASE
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
 flight delays inputted by users

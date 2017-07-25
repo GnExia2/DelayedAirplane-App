@@ -86,10 +86,19 @@ July 24, 2017
   drew mock-up of possible designs
 
 July 25, 2017
+<<<<<<< HEAD
 
+=======
+>>>>>>> f0c9735c44c1b133d10463ef2d0dd439bb1e2a36
   2:30pm - ran into some bugs of somehow having a project within project - solved
+  4:30pm - running into issues with git pull and push
+  created API endpoint.
 
+<<<<<<< HEAD
   July 26, 2017
+=======
+July 26, 2017
+>>>>>>> f0c9735c44c1b133d10463ef2d0dd439bb1e2a36
 
 
   July 27, 2017

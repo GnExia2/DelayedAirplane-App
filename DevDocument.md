@@ -86,13 +86,10 @@ July 24, 2017
   drew mock-up of possible designs
 
 July 25, 2017
-<<<<<<< HEAD
   2:30pm - ran into some bugs of somehow having a project within project - solved
+  4:30pm - running into issues with git pull and push
+  created API endpoint.
 
-=======
-  2:30pm - ran into issue of having a project within a project - solved
-  
->>>>>>> fa9023b7a1bb242815884da9dffc1bfd68f76983
 July 26, 2017
 
 

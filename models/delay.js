@@ -4,12 +4,12 @@ var mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
   var delaySchema = new Schema({
-       Airline: String,
-       FlightNumber: String,
-       FromTo: String,
-       Status: String,
-       TimeDelayed:String,
-       image:String;
+     airline: String,
+     flightNumber: Number,
+     fromTo: String,
+     status: String,
+     timeDelayed:String,
+     image:String
   });
 // create Schema
 

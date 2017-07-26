@@ -2,4 +2,5 @@
 
 module.exports = {
   api: require('./apiController'),
+  delays: require('./delaysController'),
 }

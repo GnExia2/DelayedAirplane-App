@@ -2,4 +2,4 @@
 let mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/DelayedAirplane-App');
 
-module.exports.Delay = require("./delay.js");
+module.exports.delay = require("./delay.js");

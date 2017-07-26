@@ -34,7 +34,7 @@ function renderDelay(delay) {
           <!-- begin delay internal row -->
             <div class='row'>
               <div class="col-md-3 col-xs-12 thumbnail delay-art">
-                <img src=${delay.id}- alt="delay image">
+                <img src=${delay.id}-image alt="delay image">
               </div>
               <div class="col-md-9 col-xs-12">
                 <ul class="list-group">

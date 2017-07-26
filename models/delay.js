@@ -9,6 +9,7 @@ var mongoose = require('mongoose'),
        FromTo: String,
        Status: String,
        TimeDelayed:String,
+       image:String;
   });
 // create Schema
 

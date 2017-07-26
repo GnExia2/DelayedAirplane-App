@@ -6,16 +6,10 @@ var DelayList =[];
               FlightNumber: 5142,
               FromTo: "SFO",
               Status: "Delayed",
-              Time Delayed:30,
+              TimeDelayed:30,
+              image: 'images/unitedairlinesIcon.png'
               });
 
-
-
-// var sampleSongs = [];
-//
-//   sampleSongs.push({ name: 'Swamped',
-//                      trackNumber: 1
-//   });
 
 
 

@@ -1,12 +1,13 @@
 $(document).ready(function(){
   console.log('sanity check');
   $(".dropdown-toggle").dropdown();
-
-  $.ajax({
-    method: 'GET',
-    url: '/api/delays',
-    success: handleSuccess,
-    error: handleError
+  // 
+  // $.ajax({
+  //   method: 'GET',
+  //   url: '/api/delays',
+  //   success: handleSuccess,
+  //   error: handleError
+  //
 });
 
 
@@ -75,4 +76,4 @@ function renderDelay(delay) {
   <!-- end one delay -->
   `);
   $('#flights').append(delayHtml);
-};
+}

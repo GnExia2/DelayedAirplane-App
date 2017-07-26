@@ -24,9 +24,9 @@ DelayList.forEach(function(album){
 });
 
 db.Delay.remove({}, function(err, delay){
-  // code in here runs after all albums are removed
+  // code in here runs after all delays are removed
   db.Delay.create(DelayList, function(err, delay){
-    // code in here runs after all albums are created
+    // code in here runs after all delays are created
     if (err) { return console.log('ERROR', err); }
     console.log("all delays:", delay);
     console.log("created", delay.length, "delay");

@@ -12,6 +12,6 @@ var mongoose = require('mongoose'),
   });
 // create Schema
 
-var delay = mongoose.model('delay', delaySchema);
+var Delay = mongoose.model('Delay', delaySchema);
 
-module.exports = delay;
+module.exports = Delay;

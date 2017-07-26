@@ -91,7 +91,7 @@ July 25, 2017
   created API endpoint.
 
 July 26, 2017
-  
+
 
 July 27, 2017
 
@@ -109,18 +109,18 @@ July 31, 2017
 
 
 
-Ryan's updates
+  Ryan's updates
 
-July 25, 2017
+  July 25, 2017
 
-July 26, 2017
+  July 26, 2017
 
-July 27, 2017
+  July 27, 2017
 
-July 28, 2017
+  July 28, 2017
 
-July 29, 2017
+  July 29, 2017
 
-July 30, 2017
+  July 30, 2017
 
-July 31, 2017
+  July 31, 2017

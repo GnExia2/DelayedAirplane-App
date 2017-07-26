@@ -8,7 +8,6 @@ $(document).ready(function(){
     success: handleSuccess,
     error: handleError
   });
-
 });
 
 
@@ -76,4 +75,4 @@ function renderDelay(delay) {
   <!-- end one delay -->
   `);
   $('#flights').append(delayHtml);
-};
+}

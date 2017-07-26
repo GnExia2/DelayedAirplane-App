@@ -114,7 +114,7 @@
 
                <!-- Button -->
                <div class="form-group">
-                 <label class="col-md-4 control-label" for="singlebutton">Save Album</label>
+                 <label class="col-md-4 control-label" for="singlebutton">Save Delay</label>
                  <div class="col-md-4">
                    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
                  </div>
@@ -138,24 +138,24 @@
        </div>
 
        <!-- albums container! -->
-       <div id='albums'><div id='albums'></div>
+       <div id='flights'></div>
 
      </section>
 
-     <!-- begin songModal: this is not visible until you call .modal() on it -->
-     <div class="modal fade" tabindex="-1" role="dialog" id="songModal">
+     <!-- begin flightModal: this is not visible until you call .modal() on it -->
+     <div class="modal fade" tabindex="-1" role="dialog" id="flightModal">
        <div class="modal-dialog">
          <div class="modal-content">
            <div class="modal-header">
              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-             <h4 class="modal-title">Create Song</h4>
+             <h4 class="modal-title">Create flight</h4>
            </div>
            <div class="modal-body">
 
              <fieldset class='form-horizontal'>
                <!-- Text input-->
                <div class="form-group">
-                 <label class="col-md-4 control-label" for="songName">Song Name</label>
+                 <label class="col-md-4 control-label" for="Airline">Airline</label>
                  <div class="col-md-4">
                    <input id="songName" name="songName" type="text" placeholder="" class="form-control input-md" required="">
                  </div>
@@ -163,7 +163,7 @@
 
                <!-- Number input-->
                <div class="form-group">
-                 <label class="col-md-4 control-label" for="trackNumber">Track Number</label>
+                 <label class="col-md-4 control-label" for="delayTime">Delay Time</label>
                  <div class="col-md-4">
                    <input id="trackNumber" name="trackNumber" type="number" placeholder="" class="form-control input-md">
                  </div>
@@ -173,7 +173,7 @@
            </div>
            <div class="modal-footer">
              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-             <button type="button" class="btn btn-primary" id="saveSong">Save changes</button>
+             <button type="button" class="btn btn-primary" id="saveDelay">Save changes</button>
            </div>
          </div><!-- /.modal-content -->
        </div><!-- /.modal-dialog -->
@@ -189,7 +189,7 @@
          <div class="modal-content">
            <div class="modal-header">
              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-             <h4 class="modal-title" id="editDelaysModalTitle">Edit Song List</h4>
+             <h4 class="modal-title" id="editDelaysModalTitle">Edit Delays List</h4>
            </div>
            <div class="modal-body" id='editDelaysModalBody'>
              <p> REPLACE #editDelaysModalBody </p>

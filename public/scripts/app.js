@@ -72,5 +72,7 @@ function renderDelay(delay) {
       </div>
       </form>
     </div>
-
-
+  <!-- end one delay -->
+  `);
+  $('#flights').append(delayHtml);
+};

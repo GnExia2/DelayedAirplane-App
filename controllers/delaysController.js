@@ -1,18 +1,14 @@
-/************
- * DATABASE *
- ************/
 
 var db = require('../models');
 
-// GET /api/delays
+  // console.log('this works');
 function index(req, res) {
-  // send back all delays as JSON
-  db.Delay.find({}, function(err, allDelays) {
+  db.delay.find({}, function(err, allDelays){
     res.json(allDelays);
-  });
+  })
+
 }
 
 module.exports = {
   index: index
-
-}
+};

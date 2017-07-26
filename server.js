@@ -26,7 +26,8 @@ var express = require('express'),
   });
 
   app.get('/api', controllers.api.index);
-  // app.get('/api/delays', controllers.delays.index);
+  app.get('/api/delays', controllers.delays.index);
+
 
 
 

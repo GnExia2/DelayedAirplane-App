@@ -91,7 +91,7 @@ July 25, 2017
   created API endpoint.
 
 July 26, 2017
-
+  created GET route to api/delays
 
 July 27, 2017
 

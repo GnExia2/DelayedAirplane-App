@@ -1,24 +1,23 @@
 $(document).ready(function(){
   console.log('sanity check');
   $(".dropdown-toggle").dropdown();
-  // 
-  // $.ajax({
-  //   method: 'GET',
-  //   url: '/api/delays',
-  //   success: handleSuccess,
-  //   error: handleError
-  //
+
+  $.ajax({
+    method: 'GET',
+    url: '/api/delays',
+    success: handleSuccess,
+    error: handleError
+  });
 });
 
 
   function handleSuccess(data){
-    console.log(res.json(data))
-    renderDelay(delay);
+    console.log("sanity check")
+    renderDelay(data);
   };
 
   function handleError(err){
     console.log('There has been an error: ', err);
-
   }
 
 
@@ -35,29 +34,29 @@ function renderDelay(delay) {
           <!-- begin delay internal row -->
             <div class='row'>
               <div class="col-md-3 col-xs-12 thumbnail delay-art">
-                <img src=${delay.id}- alt="delay image">
+                <img src=${delay.id}-image alt="delay image">
               </div>
               <div class="col-md-9 col-xs-12">
                 <ul class="list-group">
                   <li class="list-group-item">
-                    <h4 class='inline-header'>Airline:</h4>
-                    <span id="${delay._id}-Airline" class='delayData'>${delay.Airline}</span>
-                    <span id="${delay._id}-Airline-input-span" class='delayInput'>
-                      <input id="${delay._id}-Airline-input" type="text" name="Airline" value="${delay.Airline}" size="${delay.Airline.length}" required>
+                    <h4 class='inline-header'>airline:</h4>
+                    <span id="${delay._id}-airline" class='delayData'>${delay.airline}</span>
+                    <span id="${delay._id}-airline-input-span" class='delayInput'>
+                      <input id="${delay._id}-airline-input" type="text" name="airline" value="${delay.airline}" required>
                     </span>
                   </li>
                   <li class="list-group-item">
                     <h4 class='inline-header'>Flight Number:</h4>
-                    <span id="${delay._id}-FlightNumber" class='delayData'>${delay.FlightNumber}</span>
-                    <span id="${delay._id}-FlightNumber-input-span" class='delayInput'>
-                      <input id="${delay._id}-FlightNumber-input" type="text" name="FlightNumber" size="${delay.FlightNumber.length}" value="${delay.FlightNumber}" required>
+                    <span id="${delay._id}-flightNumber" class='delayData'>${delay.flightNumber}</span>
+                    <span id="${delay._id}-flightNumber-input-span" class='delayInput'>
+                      <input id="${delay._id}-flightNumber-input" type="text" name="flightNumber value="${delay.flightNumber}" required>
                     </span>
                   </li>
                   <li class="list-group-item">
                     <h4 class='inline-header'>Time Delayed:</h4>
-                    <span id="${delay._id}-TimeDelay" class='delayData'>${delay.TimeDelay}</span>
-                    <span id="${delay._id}-TimeDelay-input-span" class='delayInput'>
-                      <input id="${delay._id}-TimeDelay-input" type="text" name="TimeDelay"  size="${delay.TimeDelay.length}" value="${delay.TimeDelay}" required>
+                    <span id="${delay._id}-timeDelay" class='delayData'>${delay.timeDelay}</span>
+                    <span id="${delay._id}-timeDelay-input-span" class='delayInput'>
+                      <input id="${delay._id}-timeDelay-input" type="text" name="timeDelay" value="${delay.timeDelay}" required>
                     </span>
                   </li>
                 </ul>

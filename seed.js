@@ -1,32 +1,34 @@
 var db = require("./models");
 
-var DelayList =[];
-  DelayList.push({
-              Airline: 'United',
-              FlightNumber: 5142,
-              FromTo: "SFO",
-              Status: "Delayed",
-              Time Delayed:30,
+var delayList =[];
+  delayList.push({
+              airline: 'United',
+              flightNumber: 5142,
+              fromTo: "SFO",
+              status: "Delayed",
+              timeDelayed:30,
+              image: 'images/unitedairlinesIcon.png'
               });
+delayList.push({
+            airline: 'SouthWest',
+            flightNumber: 3563,
+            fromTo: "SFO",
+            status: "Delayed",
+            timeDelayed:99,
+            image: 'images/southwestIcon.jpg'
+            });
 
 
 
-// var sampleSongs = [];
-//
-//   sampleSongs.push({ name: 'Swamped',
-//                      trackNumber: 1
-//   });
-
-
-
-DelayList.forEach(function(album){
+delayList.forEach(function(delay){
     // delay.songs=sampleSongs;
 });
 
-db.Delay.remove({}, function(err, delay){
-  // code in here runs after all delays are removed
-  db.Delay.create(DelayList, function(err, delay){
-    // code in here runs after all delays are created
+db.delay.remove({}, function(err, delay){
+  // code in here runs after all albums are removed
+  db.delay.create(delayList, function(err, delay){
+    // code in here runs after all albums are created
+
     if (err) { return console.log('ERROR', err); }
     console.log("all delays:", delay);
     console.log("created", delay.length, "delay");

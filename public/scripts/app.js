@@ -1,6 +1,7 @@
 $(document).ready(function(){
   console.log('sanity check');
   $(".dropdown-toggle").dropdown();
+
   $.ajax({
     method: 'GET',
     url: '/api/delays',
@@ -71,4 +72,5 @@ function renderDelay(delay) {
       </div>
       </form>
     </div>
+
 

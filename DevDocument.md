@@ -94,7 +94,9 @@ July 26, 2017
   created GET route to api/delays
 
 July 27, 2017
-
+  linked images to append based on schema
+  working on linking input AIRLINE to image
+  created comment schema and controllers. initial seed data
 
 July 28, 2017
 

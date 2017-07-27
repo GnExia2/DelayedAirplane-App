@@ -11,12 +11,12 @@ function index(req, res) {
 // POST /api/albums
 function create(req, res) {
   // create new delay with form data (`req.body`)
-    console.log('books create');
+    console.log('delay created');
     var delay = new db.delay({
       airline: req.body.airline,
       flightNumber: req.body.flightNumber,
-      from: req.body.from,
-      to: req.body.to,
+      origin: req.body.origin,
+      destination: req.body.destination,
       status: req.body.status,
       timeDelayed:req.body.timeDelayed,
       image:req.body.image

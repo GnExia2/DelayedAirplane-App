@@ -13,3 +13,11 @@
   vertical-align: baseline;
   margin-right: 12px;
 }
+
+.delayInput, .save-delay {
+  display: none;
+}
+
+.delayData, .edit-delay {
+  display: inline;
+}

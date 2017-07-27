@@ -41,21 +41,21 @@ function renderDelay(delay) {
               <div class="col-md-9 col-xs-12">
                 <ul class="list-group">
                   <li class="list-group-item">
-                    <h4 class='inline-header'>airline:</h4>
-                    <span id="${delay._id}-airline" class='delayData'>${delay.airline}</span>
-                    <span id="${delay._id}-airline-input-span" class='delayInput'>
-                      <input id="${delay._id}-airline-input" type="text" name="airline" value="${delay.airline}" required>
-                    </span>
-                  </li>
-                  <li class="list-group-item">
-                    <h4 class='inline-header'>Flight Number:</h4>
+                    <h6 class='inline-header'>Flight Number:</h6>
                     <span id="${delay._id}-flightNumber" class='delayData'>${delay.flightNumber}</span>
                     <span id="${delay._id}-flightNumber-input-span" class='delayInput'>
                       <input id="${delay._id}-flightNumber-input" type="text" name="flightNumber value="${delay.flightNumber}" required>
                     </span>
                   </li>
                   <li class="list-group-item">
-                    <h4 class='inline-header'>Time Delayed:</h4>
+                  <h6 class='inline-header'>airline:</h6>
+                  <span id="${delay._id}-airline" class='delayData'>${delay.airline}</span>
+                  <span id="${delay._id}-airline-input-span" class='delayInput'>
+                  <input id="${delay._id}-airline-input" type="text" name="airline" value="${delay.airline}" required>
+                  </span>
+                  </li>
+                  <li class="list-group-item">
+                    <h6 class='inline-header'>Time Delayed:</h6>
                     <span id="${delay._id}-timeDelay" class='delayData'>${delay.timeDelayed}</span>
                     <span id="${delay._id}-timeDelay-input-span" class='delayInput'>
                       <input id="${delay._id}-timeDelay-input" type="text" name="timeDelay" value="${delay.timeDelayed}" required>
@@ -77,4 +77,19 @@ function renderDelay(delay) {
   <!-- end one delay -->
   `);
   $('#flights').append(delayHtml);
-}
+};
+
+$('#flights').on('click', '.edit-delay', function(e) {
+  console.log('edit');
+  var id= $(this).closest('.delay').data('delay-id');
+  var selectorId = `#${id}`,
+  selectorIdAirline = `${selectorId} .delayInput`,
+  selectorIdFlightNumber = `${selectorId} .delayData`,
+  selectorIdSaveDelay = `${selectorId} .save-delay`,
+  selectorIdEditDelay = `${selectorId} .edit-delay`;
+
+  $(selectorIdAirline).css("display","inline");
+  $(selectorIdFlightNumber).css("display","none");
+  $(selectorIdSaveDelay).css("display","inline");
+  $(selectorIdEditDelay).css("display","none");
+});

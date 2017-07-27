@@ -3,13 +3,13 @@
 var mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
-  var commentSchema = new Schema({
+  var commentsSchema = new Schema({
      name: String,
      airport: String,
      comment: String
   });
 // create Schema
 
-var comment = mongoose.model('comment', commentSchema);
+var comments = mongoose.model('comments', commentsSchema);
 
-module.exports = comment;
+module.exports = comments;

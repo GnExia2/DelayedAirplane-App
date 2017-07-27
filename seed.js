@@ -55,14 +55,14 @@ var commentList =[];
     comment: "I really like SFO"
               });
 
-  db.comments.remove({}, function(err, comment){
+  db.comments.remove({}, function(err, comments){
     // code in here runs after all delays are removed
-    db.comments.create(commentList, function(err, comment){
+    db.comments.create(commentList, function(err, comments){
       // code in here runs after all delays are created
 
       if (err) { return console.log('ERROR', err); }
-      console.log("all comments:", comment);
-      console.log("created", comment.length, "comment");
+      console.log("all comments:", comments);
+      console.log("created", comments.length, "comment");
       process.exit();
     });
   });

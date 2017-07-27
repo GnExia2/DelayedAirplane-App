@@ -12,9 +12,11 @@ $(document).ready(function(){
 
 
   function handleSuccess(data){
-    console.log("sanity check")
-    renderDelay(data);
-  };
+    data.forEach(function(i){
+      console.log("sanity check")
+      renderDelay(i);
+    });
+};
 
   function handleError(err){
     console.log('There has been an error: ', err);
@@ -54,9 +56,9 @@ function renderDelay(delay) {
                   </li>
                   <li class="list-group-item">
                     <h4 class='inline-header'>Time Delayed:</h4>
-                    <span id="${delay._id}-timeDelay" class='delayData'>${delay.timeDelay}</span>
+                    <span id="${delay._id}-timeDelay" class='delayData'>${delay.timeDelayed}</span>
                     <span id="${delay._id}-timeDelay-input-span" class='delayInput'>
-                      <input id="${delay._id}-timeDelay-input" type="text" name="timeDelay" value="${delay.timeDelay}" required>
+                      <input id="${delay._id}-timeDelay-input" type="text" name="timeDelay" value="${delay.timeDelayed}" required>
                     </span>
                   </li>
                 </ul>

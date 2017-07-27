@@ -8,7 +8,7 @@ var mongoose = require('mongoose'),
      flightNumber: Number,
      fromTo: String,
      status: String,
-     timeDelayed:Number,
+     timeDelayed:String,
      image:String
   });
 // create Schema

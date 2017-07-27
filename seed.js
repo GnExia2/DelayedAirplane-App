@@ -4,7 +4,8 @@ var delayList =[];
   delayList.push({
               airline: 'United',
               flightNumber: 5142,
-              fromTo: "SFO",
+              from: "SFO",
+              to: "LAX",
               status: "Delayed",
               timeDelayed:30,
               image: 'images/unitedairlinesIcon.png'
@@ -12,12 +13,21 @@ var delayList =[];
 delayList.push({
             airline: 'SouthWest',
             flightNumber: 3563,
-            fromTo: "SFO",
+            from: "SFO",
+            to: "LAX",
             status: "Delayed",
             timeDelayed:99,
             image: 'images/southwestIcon.jpg'
             });
-
+delayList.push({
+            airline: 'Delta',
+            flightNumber: 5929,
+            from: "SFO",
+            to: "LAX",
+            status: "Delayed",
+            timeDelayed:99,
+            image: 'images/deltaIcon.png'
+            });
 
 
 delayList.forEach(function(delay){

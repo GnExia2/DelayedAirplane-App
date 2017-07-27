@@ -47,10 +47,10 @@
                <div class="form-group">
                  <label class="col-md-4 control-label" for="airline">Airline</label>
                  <div class="col-md-4">
-                   <select class="" name="">
-                     <option value="delta">Delta</option>
-                     <option value="southwest">SouthWest</option>
-                     <option value="united">United</option>
+                   <select class="" name="airline" id="textinput" type="text">
+                     <option value="Delta">Delta</option>
+                     <option value="Southwest">SouthWest</option>
+                     <option value="United">United</option>
                      <!-- <option value="audi">Audi</option> -->
                    </select>
                  </div>
@@ -68,7 +68,7 @@
                <div class="form-group">
                  <label class="col-md-4 control-label" for="from">From</label>
                  <div class="col-md-4">
-                   <select class="" name="">
+                   <select class="" name="from" id="textinput" type="text">
                      <option value="sfo">SFO</option>
                      <option value="atl">ATL</option>
                      <!-- <option value="fiat">United</option> -->
@@ -80,7 +80,7 @@
                <div class="form-group">
                  <label class="col-md-4 control-label" for="to">To</label>
                  <div class="col-md-4">
-                   <select class="" name="">
+                   <select class="" name="to" id="textinput" type="text">
                      <option value="sfo">SFO</option>
                      <option value="atl">ATL</option>
                      <!-- <option value="fiat">United</option> -->
@@ -93,7 +93,7 @@
                <div class="form-group">
                  <label class="col-md-4 control-label" for="status">Status</label>
                  <div class="col-md-4">
-                   <select class="" name="">
+                   <select class="" name="status" id="textinput" type="text">
                      <option value="delayed">Delayed</option>
                      <option value="cancelled">Cancelled</option>
                      <!-- <option value="fiat">United</option> -->
@@ -116,7 +116,7 @@
                <div class="form-group">
                  <label class="col-md-4 control-label" for="singlebutton">Save Delay</label>
                  <div class="col-md-4">
-                   <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+                   <button id="singlebutton" name="singlebutton" type="submit" class="btn btn-primary">Submit</button>
                  </div>
                </div>
              </fieldset>
@@ -171,35 +171,6 @@
              </fieldset>
 
            </div>
-           <div class="modal-footer">
-             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-             <button type="button" class="btn btn-primary" id="saveDelay">Save changes</button>
-           </div>
-         </div><!-- /.modal-content -->
-       </div><!-- /.modal-dialog -->
-     </div><!-- /.modal -->
 
-
-
-
-
-     <!-- Edit Flights Modal -->
-     <div class="modal fade bs-modal-lg" id="editDelaysModal" tabindex="-1" role="dialog" aria-labelledby="editDelaysModalTitle">
-       <div class="modal-dialog" role="document">
-         <div class="modal-content">
-           <div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-             <h4 class="modal-title" id="editDelaysModalTitle">Edit Delays List</h4>
-           </div>
-           <div class="modal-body" id='editDelaysModalBody'>
-             <p> REPLACE #editDelaysModalBody </p>
-           </div>
-           <div class="modal-footer">
-             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-             <button type="button" class="btn btn-primary" id='editDelaysModalSubmit'>Save changes</button>
-           </div>
-         </div><!-- /.modal-content -->
-       </div><!-- /.modal-dialog -->
-     </div><!-- /.modal -->
    </body>
    </html>

@@ -6,7 +6,8 @@ var mongoose = require('mongoose'),
   var delaySchema = new Schema({
      airline: String,
      flightNumber: Number,
-     fromTo: String,
+     from: String,
+     to: String,
      status: String,
      timeDelayed:String,
      image:String

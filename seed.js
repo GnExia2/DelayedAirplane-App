@@ -4,8 +4,9 @@ var delayList =[];
   delayList.push({
               airline: 'United',
               flightNumber: 5142,
-              from: "SFO",
-              to: "LAX",
+
+              from:"ATL",
+              to: "SFO",
               status: "Delayed",
               timeDelayed:30,
               image: 'images/unitedairlinesIcon.png'
@@ -14,7 +15,7 @@ delayList.push({
             airline: 'SouthWest',
             flightNumber: 3563,
             from: "SFO",
-            to: "LAX",
+            to:"ATL",
             status: "Delayed",
             timeDelayed:99,
             image: 'images/southwestIcon.jpg'

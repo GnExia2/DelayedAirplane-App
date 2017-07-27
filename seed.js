@@ -30,7 +30,6 @@ var delayList =[];
               });
 
   delayList.forEach(function(delay){
-  });
 
   db.delay.remove({}, function(err, delay){
     // code in here runs after all delays are removed
@@ -40,9 +39,9 @@ var delayList =[];
       if (err) { return console.log('ERROR', err); }
       console.log("all delays:", delay);
       console.log("created", delay.length, "delay");
-      process.exit();
     });
   });
+});
 
 
 
@@ -55,14 +54,13 @@ var commentList =[];
     comment: "I really like SFO"
               });
 
-  db.comments.remove({}, function(err, comments){
+db.comment.remove({}, function(err){
     // code in here runs after all delays are removed
-    db.comments.create(commentList, function(err, comments){
-      // code in here runs after all delays are created
-
-      if (err) { return console.log('ERROR', err); }
-      console.log("all comments:", comments);
-      console.log("created", comments.length, "comment");
-      process.exit();
-    });
+  db.comment.create(commentList, function(err, comment){
+    // code in here runs after all comments are created
+    if (err) { return console.log('ERROR', err); }
+    console.log("all comments:", comment);
+    console.log("created", comment.length, "comment");
+    process.exit();
   });
+});

@@ -1,0 +1,9 @@
+.jumbotron {
+  background-image: url(../images/airlines.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #EEE;
+}
+.jumbotron .container {
+  height: 400px;
+}

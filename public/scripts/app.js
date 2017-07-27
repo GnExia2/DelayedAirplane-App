@@ -59,7 +59,7 @@ function renderDelay(delay) {
               <div class="col-md-3 col-xs-12 thumbnail delay-art">
                 <img src=${delay.image} alt="delay image">
               </div>
-              <div class="col-md-9 col-xs-12">
+              <div class="col-md-6 col-xs-12">
                 <ul class="list-group">
                   <li class="list-group-item">
                     <h4 class='inline-header'>Flight Number:</h4>
@@ -69,10 +69,10 @@ function renderDelay(delay) {
                     </span>
                   </li>
                   <li class="list-group-item">
-                  <h4 class='inline-header'>airline:</h4>
-                  <span id="${delay._id}-airline" class='delayData'>${delay.airline}</span>
-                  <span id="${delay._id}-airline-input-span" class='delayInput'>
-                  <input id="${delay._id}-airline-input" type="text" name="airline" value="${delay.airline}" required>
+                  <h4 class='inline-header'>Destination:</h4>
+                  <span id="${delay._id}-destination" class='delayData'>${delay.destination}</span>
+                  <span id="${delay._id}-destination-input-span" class='delayInput'>
+                  <input id="${delay._id}-destination-input" type="text" name="destination" value="${delay.destination}" required>
                   </span>
                   </li>
                   <li class="list-group-item">

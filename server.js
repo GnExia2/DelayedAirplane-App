@@ -25,12 +25,15 @@ var express = require('express'),
     console.log(__dirname);
   });
 
+
+//delay routes
   app.get('/api', controllers.api.index);
   app.get('/api/delays', controllers.delays.index);
   app.post('/api/delays', controllers.delays.create);
 
 
-
+//comment routes
+  app.get('/api/comments', controllers.comments.index);
 
 
 

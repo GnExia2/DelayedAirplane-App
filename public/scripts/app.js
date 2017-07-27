@@ -69,6 +69,13 @@ function renderDelay(delay) {
                     </span>
                   </li>
                   <li class="list-group-item">
+                  <h4 class='inline-header'>Origin:</h4>
+                  <span id="${delay._id}-destination" class='delayData'>${delay.origin}</span>
+                  <span id="${delay._id}-destination-input-span" class='delayInput'>
+                  <input id="${delay._id}-destination-input" type="text" name="Origin" value="${delay.origin}" required>
+                  </span>
+                  </li>
+                  <li class="list-group-item">
                   <h4 class='inline-header'>Destination:</h4>
                   <span id="${delay._id}-destination" class='delayData'>${delay.destination}</span>
                   <span id="${delay._id}-destination-input-span" class='delayInput'>
@@ -87,8 +94,8 @@ function renderDelay(delay) {
             </div>
             <!-- end of delay internal row -->
             <div class='panel-footer'>
-              <button class='btn btn-primary edit-delay'>Edit Delay</button>
-              <button class='btn btn-primary save-delay'>Save Changes</button>
+              <button class='btn btn-primary edit-delay edit'>Edit Delay</button>
+              <button class='btn btn-primary save-delay edit'>Save Changes</button>
             </div>
           </div>
         </div>

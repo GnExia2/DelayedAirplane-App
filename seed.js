@@ -29,7 +29,7 @@ var delayList =[];
               image: 'images/deltaIcon.png'
               });
 
-  delayList.forEach(function(delay){
+  // delayList.forEach(function(delay){
 
   db.delay.remove({}, function(err, delay){
     // code in here runs after all delays are removed
@@ -41,7 +41,7 @@ var delayList =[];
       console.log("created", delay.length, "delay");
     });
   });
-});
+// });
 
 
 

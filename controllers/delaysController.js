@@ -8,7 +8,26 @@ function index(req, res) {
   })
 
 }
+// POST /api/albums
+function create(req, res) {
+  // create new delay with form data (`req.body`)
+    console.log('books create');
+    var delay = new db.delay({
+      airline: req.body.airline,
+      flightNumber: req.body.flightNumber,
+      from: req.body.from,
+      to: req.body.to,
+      status: req.body.status,
+      timeDelayed:req.body.timeDelayed,
+      image:req.body.image
+    })
+    delay.save(function handleDBDelaySaved(err, savedDelay) {
+      res.json(savedDelay);
+    });
+  };
+
 
 module.exports = {
-  index: index
+  index: index,
+  create: create
 };

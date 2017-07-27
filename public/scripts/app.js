@@ -41,21 +41,21 @@ function renderDelay(delay) {
               <div class="col-md-9 col-xs-12">
                 <ul class="list-group">
                   <li class="list-group-item">
-                    <h6 class='inline-header'>Flight Number:</h6>
+                    <h4 class='inline-header'>Flight Number:</h4>
                     <span id="${delay._id}-flightNumber" class='delayData'>${delay.flightNumber}</span>
                     <span id="${delay._id}-flightNumber-input-span" class='delayInput'>
                       <input id="${delay._id}-flightNumber-input" type="text" name="flightNumber value="${delay.flightNumber}" required>
                     </span>
                   </li>
                   <li class="list-group-item">
-                  <h6 class='inline-header'>airline:</h6>
+                  <h4 class='inline-header'>airline:</h4>
                   <span id="${delay._id}-airline" class='delayData'>${delay.airline}</span>
                   <span id="${delay._id}-airline-input-span" class='delayInput'>
                   <input id="${delay._id}-airline-input" type="text" name="airline" value="${delay.airline}" required>
                   </span>
                   </li>
                   <li class="list-group-item">
-                    <h6 class='inline-header'>Time Delayed:</h6>
+                    <h4 class='inline-header'>Time Delayed:</h4>
                     <span id="${delay._id}-timeDelay" class='delayData'>${delay.timeDelayed}</span>
                     <span id="${delay._id}-timeDelay-input-span" class='delayInput'>
                       <input id="${delay._id}-timeDelay-input" type="text" name="timeDelay" value="${delay.timeDelayed}" required>

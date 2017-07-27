@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  console.log('sanity check');
   $(".dropdown-toggle").dropdown();
 
   $.ajax({
@@ -13,7 +12,6 @@ $(document).ready(function(){
 
   function handleSuccess(data){
     data.forEach(function(i){
-      console.log("sanity check")
       renderDelay(i);
     });
 };
@@ -24,8 +22,7 @@ $(document).ready(function(){
 
 
 function renderDelay(delay) {
-  console.log("this is working");
-  console.log('rendering delays', delay);
+  console.log('rendering delay', delay);
 
   var delayHtml = (`
     <div class="row album" id="${delay._id}" data-delay-id="${delay._id}">
@@ -36,7 +33,7 @@ function renderDelay(delay) {
           <!-- begin delay internal row -->
             <div class='row'>
               <div class="col-md-3 col-xs-12 thumbnail delay-art">
-                <img src=${delay.id}-image alt="delay image">
+                <img src=${delay.image} alt="delay image">
               </div>
               <div class="col-md-9 col-xs-12">
                 <ul class="list-group">

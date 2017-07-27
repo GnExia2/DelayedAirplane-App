@@ -10,6 +10,23 @@ $(document).ready(function(){
   });
 });
 
+$('#delay-form form').on('submit', function(e) {
+  e.preventDefault();
+  var formData = $(this).serialize();
+  console.log('formData', formData);
+  $.post('/api/delays', formData, function(delay) {
+    console.log('album after POST', delay);
+    renderDelay(delay);
+  });
+  $(this).trigger("reset");
+});
+
+// catch and handle the click on an add song button
+$('#albums').on('click', '.add-song', handleAddDelayClick);
+
+// save song modal save button
+ $('#saveSong').on('click', handleNewSongSubmit);
+ // $('#albums').on('click', '.edit-songs', handleEditSongsClick);
 
   function handleSuccess(data){
     data.forEach(function(i){
@@ -92,4 +109,50 @@ $('#flights').on('click', '.edit-delay', function(e) {
   $(selectorIdFlightNumber).css("display","none");
   $(selectorIdSaveDelay).css("display","inline");
   $(selectorIdEditDelay).css("display","none");
+
+
+  // when the delay modal submit button is clicked:
+function handleNewSongSubmit(e) {
+  e.preventDefault();
+  var $modal = $('#flightModal');
+  var $airlineNameField = $modal.find('#airline');
+  var $flightNumberField = $modal.find('#flightNumber');
+
+  // get data from modal fields
+  // note the server expects the keys to be 'airline', 'flightNumber' so we use those.
+  var dataToPost = {
+    airline: $airlineNameField.val(),
+    flightNumber: $flightNumberField.val()
+  };
+  var delayId = $modal.data('albumId');
+  console.log('retrieved delay:')
+  // POST to SERVER
+  var delayPostToServerUrl = '/api/delays/'+ delayId;
+  $.post(songPostToServerUrl, dataToPost, function(data) {
+    console.log('received data from post:', data);
+    // clear form
+    $airlineNameField.val('');
+    $flightNumberField.val('');
+  });
+    // close modal
+    $modal.modal('hide');
+    // update the correct album to show the new song
+    $.get('/api/delays/' + delayId, function(data) {
+      // remove the current instance of the album from the page
+      $('[data-delay-id=' + delayId + ']').remove();
+      // re-render it with the new album data (including songs)
+      renderDelay(data);
+    });
+  };error(function(err) {
+    console.log('post error', err);
+  });
+  // when the add song button is clicked, display the modal
+function handleAddDelayClick(e) {
+  console.log('add-delay clicked!');
+  var currentDelayId = $(this).closest('.delay').data('delay-id'); // "5665ff1678209c64e51b4e7b"
+  console.log('id',currentDelayId);
+  $('#flightModal').data('delay-id', currentDelayId);
+  $('#flightModal').modal();  // display the modal!
+}
+
 });

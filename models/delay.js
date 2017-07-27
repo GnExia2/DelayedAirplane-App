@@ -9,7 +9,7 @@ var mongoose = require('mongoose'),
      from: String,
      to: String,
      status: String,
-     timeDelayed:Number,
+     timeDelayed:String,
      image:String
   });
 // create Schema

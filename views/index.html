@@ -46,10 +46,10 @@
                <div class="form-group">
                  <label class="col-md-4 control-label" for="airline">Airline</label>
                  <div class="col-md-4">
-                   <select class="" name="">
-                     <option value="delta">Delta</option>
-                     <option value="southwest">SouthWest</option>
-                     <option value="united">United</option>
+                   <select class="" name="airline" id="textinput" type="text">
+                     <option value="Delta">Delta</option>
+                     <option value="Southwest">SouthWest</option>
+                     <option value="United">United</option>
                      <!-- <option value="audi">Audi</option> -->
                    </select>
                  </div>
@@ -65,9 +65,9 @@
                </div>
 
                <div class="form-group">
-                 <label class="col-md-4 control-label" for="from">From</label>
+                 <label class="col-md-4 control-label" for="origin">Origin</label>
                  <div class="col-md-4">
-                   <select class="" name="">
+                   <select class="" name="origin" id="textinput" type="text">
                      <option value="sfo">SFO</option>
                      <option value="atl">ATL</option>
                      <!-- <option value="fiat">United</option> -->
@@ -77,9 +77,9 @@
                </div>
 
                <div class="form-group">
-                 <label class="col-md-4 control-label" for="to">To</label>
+                 <label class="col-md-4 control-label" for="destination">Destination</label>
                  <div class="col-md-4">
-                   <select class="" name="">
+                   <select class="" name="destination" id="textinput" type="text">
                      <option value="sfo">SFO</option>
                      <option value="atl">ATL</option>
                      <!-- <option value="fiat">United</option> -->
@@ -92,7 +92,7 @@
                <div class="form-group">
                  <label class="col-md-4 control-label" for="status">Status</label>
                  <div class="col-md-4">
-                   <select class="" name="">
+                   <select class="" name="status" id="textinput" type="text">
                      <option value="delayed">Delayed</option>
                      <option value="cancelled">Cancelled</option>
                      <!-- <option value="fiat">United</option> -->
@@ -115,7 +115,7 @@
                <div class="form-group">
                  <label class="col-md-4 control-label" for="singlebutton">Save Delay</label>
                  <div class="col-md-4">
-                   <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+                   <button id="singlebutton" name="singlebutton" type="submit" class="btn btn-primary">Submit</button>
                  </div>
                </div>
              </fieldset>
@@ -142,63 +142,34 @@
      </section>
 
      <!-- begin flightModal: this is not visible until you call .modal() on it -->
-     <div class="modal fade" tabindex="-1" role="dialog" id="flightModal">
-       <div class="modal-dialog">
-         <div class="modal-content">
-           <div class="modal-header">
+     <!-- <div class="modal fade" tabindex="-1" role="dialog" id="flightModal"> -->
+       <!-- <div class="modal-dialog"> -->
+         <!-- <div class="modal-content"> -->
+           <!-- <div class="modal-header">
              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
              <h4 class="modal-title">Create flight</h4>
            </div>
            <div class="modal-body">
 
              <fieldset class='form-horizontal'>
-               <!-- Text input-->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="Airline">Airline</label>
-                 <div class="col-md-4">
-                   <input id="Airline" name="Airline" type="text" placeholder="" class="form-control input-md" required="">
-                 </div>
-               </div>
+               Text input
+               <! <div class="form-group"> -->
+                 <!-- <label class="col-md-4 control-label" for="Airline">Airline</label> -->
+                 <!-- <div class="col-md-4"> -->
+                   <!-- <input id="Airline" name="Airline" type="text" placeholder="" class="form-control input-md" required=""> -->
+                 <!-- </div> -->
+               <!-- </div> -->
 
                <!-- Number input-->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="delayTime">Delay Time</label>
-                 <div class="col-md-4">
-                   <input id="delaytime" name="delaytime" type="number" placeholder="" class="form-control input-md">
-                 </div>
-               </div>
-             </fieldset>
+               <!-- <div class="form-group"> -->
+                 <!-- <label class="col-md-4 control-label" for="delayTime">Delay Time</label> -->
+                 <!-- <div class="col-md-4"> -->
+                   <!-- <input id="delaytime" name="delaytime" type="number" placeholder="" class="form-control input-md"> -->
+                 <!-- </div> -->
+               <!-- </div> -->
+             <!-- </fieldset> -->
 
-           </div>
-           <div class="modal-footer">
-             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-             <button type="button" class="btn btn-primary" id="saveDelay">Save changes</button>
-           </div>
-         </div><!-- /.modal-content -->
-       </div><!-- /.modal-dialog -->
-     </div><!-- /.modal -->
+           <!-- </div> --> -->
 
-
-
-
-
-     <!-- Edit Flights Modal -->
-     <div class="modal fade bs-modal-lg" id="editDelaysModal" tabindex="-1" role="dialog" aria-labelledby="editDelaysModalTitle">
-       <div class="modal-dialog" role="document">
-         <div class="modal-content">
-           <div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-             <h4 class="modal-title" id="editDelaysModalTitle">Edit Delays List</h4>
-           </div>
-           <div class="modal-body" id='editDelaysModalBody'>
-             <p> REPLACE #editDelaysModalBody </p>
-           </div>
-           <div class="modal-footer">
-             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-             <button type="button" class="btn btn-primary" id='editDelaysModalSubmit'>Save changes</button>
-           </div>
-         </div><!-- /.modal-content -->
-       </div><!-- /.modal-dialog -->
-     </div><!-- /.modal -->
    </body>
    </html>

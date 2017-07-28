@@ -1,0 +1,21 @@
+.jumbotron {
+  background-image: url(../images/sfo-banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #EEE;
+
+}
+.jumbotron .container {
+  height: 400px;
+}
+
+.inline-header {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 12px;
+}
+
+
+h1{
+  font-family: Arial, sans-serif;
+}

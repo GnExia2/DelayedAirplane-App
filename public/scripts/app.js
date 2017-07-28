@@ -44,31 +44,6 @@ $(document).ready(function(){
     console.log('There has been an error: ', err);
   }
 
-   $('#flights').on('click', '.delete-delay', function delayDelete(){
-      console.log('delete attempt');
-    
-   });
-
-  // when a delete button for a delay is clicked
-  function handleDeleteDelayClick(e) {
-    var delayId = $(this).parents('.delay').data('delay-id');
-    console.log('someone wants to delete delay id=' + delayId );
-    $.ajax({
-      url: '/api/delays/' + delayId,
-      method: 'DELETE',
-      success: handleDeleteAlbumSuccess
-    });
-  }
-
-  // callback after DELETE /api/delays/:id
-  function handleDeleteAlbumSuccess(data) {
-    var deletedAlbumId = data._id;
-    console.log('removing the following delay from the page:', deletedDelayId);
-    $('div[data-delay-id=' + deletedDelayId + ']').remove();
-  }
-
-
-
 
 function renderDelay(delay) {
   console.log('rendering delay', delay);
@@ -108,7 +83,16 @@ function renderDelay(delay) {
                   </span>
                   </li>
                   <li class="list-group-item">
-                    <h4 class='inline-header'>Time Delayed (min):</h4>
+
+                    <h4 class='inline-header'>Status:</h4>
+                    <span id="${delay._id}-timeDelay" class='delayData'>${delay.status}</span>
+                    <span id="${delay._id}-timeDelay-input-span" class='delayInput'>
+                      <input id="${delay._id}-timeDelay-input" type="text" name="timeDelay" value="${delay.status}" required>
+                    </span>
+                  </li>
+                  <li class="list-group-item 77">
+                    <h4 class='inline-header'>New Departure Time:</h4>
+
                     <span id="${delay._id}-timeDelay" class='delayData'>${delay.timeDelayed}</span>
                     <span id="${delay._id}-timeDelay-input-span" class='delayInput'>
                       <input id="${delay._id}-timeDelay-input" type="text" name="timeDelay" value="${delay.timeDelayed}" required>
@@ -119,9 +103,9 @@ function renderDelay(delay) {
             </div>
             <!-- end of delay internal row -->
             <div class='panel-footer'>
-              <button class='btn btn-primary edit-delay edit'>Edit Delay</button>
+              <button class='btn btn-primary edit-delay edit'>Edit Flight</button>
               <button class='btn btn-primary save-delay edit'>Save Changes</button>
-              <button class='btn btn-primary delete-delay'>Delete Delay</button>
+              <button class='btn btn-primary del-delay'>Delete Flight</button>
             </div>
           </div>
         </div>
@@ -131,6 +115,7 @@ function renderDelay(delay) {
   <!-- end one delay -->
   `);
   $('#flights').append(delayHtml);
+
 };
 
 $('#flights').on('click', '.edit-delay', function(e) {

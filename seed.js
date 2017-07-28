@@ -7,7 +7,7 @@ var delayList =[];
               origin:"ATL",
               destination: "SFO",
               status: "Delayed",
-              timeDelayed:30,
+              timeDelayed:9+':'+46 +'pm',
               image: 'images/unitedairlinesIcon.png'
               });
   delayList.push({
@@ -16,7 +16,7 @@ var delayList =[];
               origin: "SFO",
               destination:"ATL",
               status: "Delayed",
-              timeDelayed:99,
+              timeDelayed:7+':'+15 +'pm',
               image: 'images/southwestIcon.jpg'
               });
   delayList.push({
@@ -25,7 +25,7 @@ var delayList =[];
               origin: "SFO",
               destination: "LAX",
               status: "Delayed",
-              timeDelayed:99,
+              timeDelayed:10+':'+45 +'pm',
               image: 'images/deltaIcon.png'
               });
 

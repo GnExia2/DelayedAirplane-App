@@ -29,6 +29,12 @@ function create(req, res) {
     if(newDelay.airline == "United" || newDelay.airline == "united"){
       newDelay.image = 'images/unitedairlinesIcon.png'
     }
+
+    if(newDelay.status == "cancelled" || newDelay.status == "cancelled"){
+      newDelay.timeDelayed = "N/A";
+
+    }
+
     delay = new db.delay(newDelay);
 
     delay.save(function handleDBDelaySaved(err, savedDelay) {

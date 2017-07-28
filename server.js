@@ -25,6 +25,10 @@ var express = require('express'),
     console.log(__dirname);
   });
 
+  app.get('/thingstodo', function (req, res) {
+    res.sendFile('views/things_to_do.html', {root:__dirname});
+    console.log(__dirname);
+  });
 
 //delay routes
   app.get('/api', controllers.api.index);

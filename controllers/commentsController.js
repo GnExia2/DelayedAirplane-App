@@ -12,6 +12,9 @@ function create(req, res) {
   // create new comment with form data (`req.body`)
     console.log('comment created');
     var newComment = {
+      name: req.body.name,
+      airport: req.body.airport,
+      comment: req.body.comment
     }
     comments = new db.delay(newComment);
 

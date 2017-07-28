@@ -34,6 +34,7 @@ var express = require('express'),
 
 //comment routes
   app.get('/api/comments', controllers.comments.index);
+  app.post('/api/comments', controllers.comments.create);
 
 
 

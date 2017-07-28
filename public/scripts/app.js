@@ -65,7 +65,7 @@ function renderDelay(delay) {
                     <h4 class='inline-header'>Flight Number:</h4>
                     <span id="${delay._id}-flightNumber" class='delayData'>${delay.flightNumber}</span>
                     <span id="${delay._id}-flightNumber-input-span" class='delayInput'>
-                      <input id="${delay._id}-flightNumber-input" type="text" name="flightNumber value="${delay.flightNumber}" required>
+                      <input id="${delay._id}-flightNumber-input" type="text" name="flightNumber" value="${delay.flightNumber}" required>
                     </span>
                   </li>
                   <li class="list-group-item">
@@ -96,6 +96,7 @@ function renderDelay(delay) {
             <div class='panel-footer'>
               <button class='btn btn-primary edit-delay edit'>Edit Delay</button>
               <button class='btn btn-primary save-delay edit'>Save Changes</button>
+              <button class='btn btn-primary del-delay'>Delete Delay</button>
             </div>
           </div>
         </div>
@@ -122,48 +123,5 @@ $('#flights').on('click', '.edit-delay', function(e) {
   $(selectorIdEditDelay).css("display","none");
 
 
-//   // when the delay modal submit button is clicked:
-// function handleNewSongSubmit(e) {
-//   e.preventDefault();
-//   var $modal = $('#flightModal');
-//   var $airlineNameField = $modal.find('#airline');
-//   var $flightNumberField = $modal.find('#flightNumber');
-//
-//   // get data from modal fields
-//   // note the server expects the keys to be 'airline', 'flightNumber' so we use those.
-//   var dataToPost = {
-//     airline: $airlineNameField.val(),
-//     flightNumber: $flightNumberField.val()
-//   };
-//   var delayId = $modal.data('albumId');
-//   console.log('retrieved delay:')
-//   // POST to SERVER
-//   var delayPostToServerUrl = '/api/delays/'+ delayId;
-//   $.post(songPostToServerUrl, dataToPost, function(data) {
-//     console.log('received data from post:', data);
-//     // clear form
-//     $airlineNameField.val('');
-//     $flightNumberField.val('');
-//   });
-//     // close modal
-//     $modal.modal('hide');
-//     // update the correct album to show the new song
-//     $.get('/api/delays/' + delayId, function(data) {
-//       // remove the current instance of the album from the page
-//       $('[data-delay-id=' + delayId + ']').remove();
-//       // re-render it with the new album data (including songs)
-//       renderDelay(data);
-//     });
-//   };error(function(err) {
-//     console.log('post error', err);
-//   });
-//   // when the add song button is clicked, display the modal
-// function handleAddDelayClick(e) {
-//   console.log('add-delay clicked!');
-//   var currentDelayId = $(this).closest('.delay').data('delay-id'); // "5665ff1678209c64e51b4e7b"
-//   console.log('id',currentDelayId);
-//   $('#flightModal').data('delay-id', currentDelayId);
-//   $('#flightModal').modal();  // display the modal!
-// }
 
 });

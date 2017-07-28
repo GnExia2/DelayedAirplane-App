@@ -29,18 +29,16 @@ var delayList =[];
               image: 'images/deltaIcon.png'
               });
 
-db.delay.remove({}, function(err, delay){
-  // code in here runs after all delays are removed
-  db.delay.create(delayList, function(err, delay){
-    // code in here runs after all delays are created
-    if (err) { return console.log('ERROR', err); }
-    console.log("all delays:", delay);
+  db.delay.remove({}, function(err, delay){
+      // code in here runs after all delays are removed
+    db.delay.create(delayList, function(err, delay){
+      console.log('created delay');
+      // code in here runs after all delays are created
+      if (err) { return console.log('ERROR', err); }
+        console.log("all delays:", delay);
+    });
     console.log("created", delay.length, "delay");
   });
-});
-
-
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -52,7 +50,7 @@ var commentList =[];
               });
 
 db.comment.remove({}, function(err){
-    // code in here runs after all delays are removed
+    // code in here runs after all comments are removed
   db.comment.create(commentList, function(err, comment){
     // code in here runs after all comments are created
     if (err) { return console.log('ERROR', err); }

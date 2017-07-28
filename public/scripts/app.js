@@ -21,9 +21,9 @@ $(document).ready(function(){
     $(this).trigger("reset");
   });
 
+  $('#flights').on('click', '.delete-delay', handleDeleteDelayClick);
 
 });
-
 // catch and handle the click on an add song button
 // $('#albums').on('click', '.add-song', handleAddDelayClick);
 
@@ -44,10 +44,7 @@ $(document).ready(function(){
     console.log('There has been an error: ', err);
   }
 
-   $('#flights').on('click', '.delete-delay', function delayDelete(){
-      console.log('delete attempt');
 
-   });
 
   // when a delete button for a delay is clicked
   function handleDeleteDelayClick(e) {
@@ -115,10 +112,17 @@ function renderDelay(delay) {
                   </span>
                   </li>
                   <li class="list-group-item">
-                    <h4 class='inline-header'>Time Delayed:</h4>
+                    <h4 class='inline-header'>New Departure Time:</h4>
                     <span id="${delay._id}-timeDelay" class='delayData'>${delay.timeDelayed}</span>
                     <span id="${delay._id}-timeDelay-input-span" class='delayInput'>
                       <input id="${delay._id}-timeDelay-input" type="text" name="timeDelay" value="${delay.timeDelayed}" required>
+                    </span>
+                  </li>
+                  <li class="list-group-item">
+                    <h4 class='inline-header'>Things to Do:</h4>
+                    <span id="${delay._id}-timeDelay" class='delayData'></span>
+                    <span id="${delay._id}-timeDelay-input-span" class='delayInput'>
+                      <input id="${delay._id}-timeDelay-input" type="text" name="timeDelay" value="" required>
                     </span>
                   </li>
                 </ul>

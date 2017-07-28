@@ -16,6 +16,7 @@ function create(req, res) {
       airport: req.body.airport,
       comment: req.body.comment
     }
+
     comments = new db.delay(newComment);
 
     comment.save(function handleDBCommentSaved(err, savedComment) {
@@ -23,9 +24,16 @@ function create(req, res) {
     });
   };
 
-
+  function destroy(req, res) {
+    db.Delay.findByIdAndRemove(req.params.delayId, function(err,delay){
+      if (err) {res.status(500).json({error:err.message});
+      }
+      res.json({delayId:req.params.delayId});
+    })
+  }
 
 module.exports = {
   index: index,
-  create: create
+  create: create,
+  destroy: destroy
 };

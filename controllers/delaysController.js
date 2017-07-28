@@ -12,15 +12,25 @@ function index(req, res) {
 function create(req, res) {
   // create new delay with form data (`req.body`)
     console.log('delay created');
-    var delay = new db.delay({
+    var newDelay = {
       airline: req.body.airline,
       flightNumber: req.body.flightNumber,
       origin: req.body.origin,
       destination: req.body.destination,
       status: req.body.status,
-      timeDelayed:req.body.timeDelayed,
-      image:req.body.image
-    })
+      timeDelayed:req.body.timeDelayed
+    }
+    if(newDelay.airline == "Delta" || "delta"){
+      newDelay.image = 'images/deltaIcon.png';
+    }
+    if(newDelay.airline == "SouthWest" || "southwest"){
+      newDelay.image = 'images/southwestIcon.jpg'
+    }
+    if(newDelay.airline == "United" || "united"){
+      newDelay.image = 'images/unitedairlinesIcon.png'
+    }
+    delay = new db.delay(newDelay);
+
     delay.save(function handleDBDelaySaved(err, savedDelay) {
       res.json(savedDelay);
     });

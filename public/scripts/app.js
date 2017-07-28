@@ -108,7 +108,7 @@ function renderDelay(delay) {
                   </span>
                   </li>
                   <li class="list-group-item">
-                    <h4 class='inline-header'>Time Delayed:</h4>
+                    <h4 class='inline-header'>Time Delayed (min):</h4>
                     <span id="${delay._id}-timeDelay" class='delayData'>${delay.timeDelayed}</span>
                     <span id="${delay._id}-timeDelay-input-span" class='delayInput'>
                       <input id="${delay._id}-timeDelay-input" type="text" name="timeDelay" value="${delay.timeDelayed}" required>

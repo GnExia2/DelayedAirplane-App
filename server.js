@@ -30,7 +30,7 @@ var express = require('express'),
   app.get('/api', controllers.api.index);
   app.get('/api/delays', controllers.delays.index);
   app.post('/api/delays', controllers.delays.create);
-  // app.delete('/api/delays/:delayId', controllers.delays.destroy);
+  app.delete('/api/delays/:delayId', controllers.delays.destroy);
 
 //comment routes
   app.get('/api/comments', controllers.comments.index);

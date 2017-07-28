@@ -20,13 +20,13 @@ function create(req, res) {
       status: req.body.status,
       timeDelayed:req.body.timeDelayed
     }
-    if(newDelay.airline == "Delta" || "delta"){
+    if(newDelay.airline == "Delta" || newDelay.airline == "delta"){
       newDelay.image = 'images/deltaIcon.png';
     }
-    if(newDelay.airline == "SouthWest" || "southwest"){
+    if(newDelay.airline == "SouthWest" || newDelay.airline == "southwest" || newDelay.airline == "Southwest"){
       newDelay.image = 'images/southwestIcon.jpg'
     }
-    if(newDelay.airline == "United" || "united"){
+    if(newDelay.airline == "United" || newDelay.airline == "united"){
       newDelay.image = 'images/unitedairlinesIcon.png'
     }
     delay = new db.delay(newDelay);

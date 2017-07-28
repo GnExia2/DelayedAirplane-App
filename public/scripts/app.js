@@ -83,7 +83,6 @@ function renderDelay(delay) {
                   </span>
                   </li>
                   <li class="list-group-item">
-
                     <h4 class='inline-header'>Status:</h4>
                     <span id="${delay._id}-timeDelay" class='delayData'>${delay.status}</span>
                     <span id="${delay._id}-timeDelay-input-span" class='delayInput'>
@@ -91,8 +90,7 @@ function renderDelay(delay) {
                     </span>
                   </li>
                   <li class="list-group-item 77">
-                    <h4 class='inline-header'>New Departure Time:</h4>
-
+                    <h4 class='inline-header'>New Arrival :</h4>
                     <span id="${delay._id}-timeDelay" class='delayData'>${delay.timeDelayed}</span>
                     <span id="${delay._id}-timeDelay-input-span" class='delayInput'>
                       <input id="${delay._id}-timeDelay-input" type="text" name="timeDelay" value="${delay.timeDelayed}" required>

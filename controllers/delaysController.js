@@ -36,8 +36,18 @@ function create(req, res) {
     });
   };
 
+  function destroy(req, res) {
+    db.Delay.findByIdAndRemove(req.params.delayId, function(err,delay){
+      if (err) {res.status(500).json({error:err.message});
+      }
+      res.json({delayId:req.params.delayId});
+    })
+  }
+
+
 
 module.exports = {
   index: index,
-  create: create
+  create: create,
+  destroy: destroy
 };

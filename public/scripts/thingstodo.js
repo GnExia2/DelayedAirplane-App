@@ -11,18 +11,30 @@ $(document).ready(function(){
     console.log(success);
   }
 
-  var sfo = false;
-  var atl = false;
-  
-  if(sfo){
-  //append sfo data here
+  function handleError(err){
+    console.log('There has been an error: ', err);
   }
 
-  if(atl){
-  //append atl data here
-  }
+  $("#air").submit(function(e){
+        e.preventDefault();
+        console.log("Submitted");
+        var formData = $(this);
 
+      if($(formData) == "SFO"){$('appendHere').append(
+        //append sfo data here
+        '<p>test</p>'
+      )
+        console.log('SFO');
 
+      }
+      else if(formData == "ATL"){$('appendHere').append(
+        //append sfo data here
+        '<p>test</p>'
+      )
+        console.log('ATL');
+
+      }
+  });
 
 
 

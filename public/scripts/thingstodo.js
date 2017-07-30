@@ -8,12 +8,15 @@ $(document).ready(function(){
   });
 
   function handleSuccess(success){
-    console.log(success);
-  }
+    success.forEach(function(i){
+      renderComment(i);
+    });
+};
 
   function handleError(err){
     console.log('There has been an error: ', err);
   }
+
 
   $("#air").submit(function(e){
         e.preventDefault();
@@ -21,14 +24,14 @@ $(document).ready(function(){
         var formData = $(this);
 
       if($(formData) == "SFO"){$('appendHere').append(
-        //append sfo data here
+        //append static sfo data here
         '<p>test</p>'
       )
         console.log('SFO');
 
       }
       else if(formData == "ATL"){$('appendHere').append(
-        //append sfo data here
+        //append static sfo data here
         '<p>test</p>'
       )
         console.log('ATL');
@@ -36,7 +39,15 @@ $(document).ready(function(){
       }
   });
 
+  //function to append comments to page
+  function renderComment(comment) {
+    console.log('rendering comment', comment);
+    //function to append comments to page
+    var commentHtml = (`
 
+    `);
+    $('#appendHere').append(commentHtml);
+  };
 
 
 

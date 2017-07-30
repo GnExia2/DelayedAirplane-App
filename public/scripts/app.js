@@ -53,12 +53,12 @@ $(document).ready(function(){
     $.ajax({
       url: '/api/delays/' + delayId,
       method: 'DELETE',
-      success: handleDeleteAlbumSuccess
+      success: handleDeleteFlight
     });
   }
 
   // callback after DELETE /api/delays/:id
-  function handleDeleteAlbumSuccess(data) {
+  function handleDeleteFlight(data) {
     var deletedAlbumId = data._id;
     console.log('removing the following delay from the page:', deletedDelayId);
     $('div[data-delay-id=' + deletedDelayId + ']').remove();

@@ -17,7 +17,7 @@ function create(req, res) {
       comment: req.body.comment
     }
 
-    comments = new db.delay(newComment);
+    comment = new db.delay(newComment);
 
     comment.save(function handleDBCommentSaved(err, savedComment) {
       res.json(savedComment);

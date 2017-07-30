@@ -1,8 +1,9 @@
 .jumbotron {
-  background-image: url(../images/sfo-banner.png);
+  background-image: url(../images/shopping.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color: #EEE;
+  color: black;
+  text-align: center;
 
 }
 .jumbotron .container {
@@ -18,19 +19,49 @@
 
 h1 {
   font-family: Arial, sans-serif;
-  
+
+
+}
+.air-div{
+  margin-left: 13%;
 }
 .air-select{
   margin-left: 620px;
   margin-bottom: 20px;
 }
 .return-nav{
-  margin-left: -750px;
-  margin-top: 125px;
+  margin-left: -1070px;
+  margin-top: 380px;
   font-size: 20px;
 
 }
 .sub{
   margin-left: -20%;
   margin-top: 65px;
+}
+#commentsHere{
+  text-align: center;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+#travTipBox{
+  border:8px solid black;
+  width: 40%;
+  margin-left: 27%;
+
+}
+#appendHere{
+  text-align: center;
+  margin-left: 25%;
+}
+#travTipBox{
+  margin-bottom: 20px;
+}
+#newComm{
+  text-align: center;
+  font-size: 140%;
+  margin-top: 15px;
+}
+li{
+  list-style-type: none;
 }

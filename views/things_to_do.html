@@ -23,34 +23,96 @@
         <h1>What to do Now</h1>
       </div>
     </div>
-    <div>
+    <div class="air-div">
       <section id="airline">
         <div class="form-group">
         <select class="col-md-1 air-select air" name ="air" id="air" type="text">
+          <option text="">Airport</option>
           <option text="SFO">SFO</option>
           <option text="ATL">ATL</option>
           <!-- <option value="United">United</option> -->
           <!-- <option value="audi">Audi</option> -->
         </select>
       </div>
+    </div>
+  </section>
+
+
+
+
+      <div class="col-md-6" id="appendHere"></div>
+      <div class="col-md-4" id="commentsHere">
+        <h2>Traveler's Tips</h2>
+        <hr>
 
       </div>
-      <!-- <p>Here are some options during your delay</p> -->
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="singlebutton"></label>
-        <div class="col-md-4">
-          <button id="singlebutton" name="singlebutton" type="submit" class="btn btn-primary sub">Submit</button>
+
+      <section id='comment-form' class="container">
+        <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+
+          <form class="form-horizontal">
+            <fieldset>
+
+              <!-- Form Name -->
+              <div id="newComm">Add New Comment<hr></div>
+
+
+
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="name">Name</label>
+                <div class="col-md-4">
+                  <input id="textinput" name="name" type="text" placeholder="" class="form-control input-md">
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="airport">Airport</label>
+                <div class="col-md-4">
+                  <select class="" name="airport" id="textinput" type="text">
+                    <option value="SFO">SFO</option>
+                    <option value="ATL">ATL</option>
+                    <!-- <option value="fiat">United</option> -->
+                    <!-- <option value="audi">Audi</option> -->
+                  </select>
+                </div>
+              </div>
+
+
+              <div class="form-group">
+
+                <label class="col-md-4 control-label" for="comment">Comment</label>
+
+                <div class="col-md-4">
+                  <input id="textinput" name="comment" type="text" placeholder="" class="form-control input-md">
+
+                </div>
+              </div>
+
+
+              <!-- Button -->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="singlebutton"></label>
+                <div class="col-md-4">
+                  <button id="singlebutton" name="singlebutton" type="submit" class="btn btn-primary">Submit Comment</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </div>
-      </section>
+    </section>
 
-      <div id="appendHere"></div>
-      <div id="commentsHere"></div>
-
+    <!--   END FORM SAMPLE -->
 
 
-      <div>
-        <a   class="col-md-4 return-nav" href="index.html">Return Home</a>
-      </div>
-    </body>
-    </html>
+
+
+    <div>
+      <a class="col-md-4 return-nav" href="index.html">Return Home</a>
+    </div>
+  </body>
+  </html>

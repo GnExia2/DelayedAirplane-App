@@ -13,27 +13,39 @@
 
     <meta charset="utf-8">
     <title>Things to do</title>
-    <link rel="icon" type="image/png" href="../public/images/sfo-icon.png">
+    <link rel="icon" type="image/jpg" href="../public/images/alicante-airport-3.jpg">
 
   </head>
   <body>
 
     <div class="jumbotron">
       <div class="container">
-        <h1>Things to do at SFO</h1>
+        <h1>What to do Now</h1>
       </div>
     </div>
     <div>
-      <select class="col-md-1 air-select" name="air" id="textinput" type="text">
-        <option value="SFO">SFO</option>
-        <option value="ATL">ATL</option>
-        <!-- <option value="United">United</option> -->
+      <form id="air">
+        <select class="col-md-1 air-select" name="air" id="textinput" type="text">
+          <option value="SFO">SFO</option>
+          <option value="ATL">ATL</option>
+      </form>
+      <!-- <option value="United">United</option> -->
         <!-- <option value="audi">Audi</option> -->
       </select>
     </div>
     <!-- <p>Here are some options during your delay</p> -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="singlebutton"></label>
+      <div class="col-md-4">
+        <button id="singlebutton" name="singlebutton" type="submit" class="btn btn-primary sub">Submit</button>
+      </div>
+    </div>
+    <div id="appendHere"></div>
+
+
+
   <div>
-      <a   class="return-nav" href="index.html">Return Home</a>
+      <a   class="col-md-4 return-nav" href="index.html">Return Home</a>
   </div>
   </body>
   </html>

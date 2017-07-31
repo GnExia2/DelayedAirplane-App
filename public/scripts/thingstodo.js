@@ -84,7 +84,7 @@ $(document).ready(function(){
     });
 };
   //post new comment
-$('#comment-form form').on('submit', function(e) {
+$('#comment-form').on('submit', function(e) {
   e.preventDefault();
   var formData = $(this).serialize();
   console.log('formData', formData);

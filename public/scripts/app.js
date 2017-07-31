@@ -49,7 +49,7 @@ function handleDeleteDelayClick(e) {
 
 // callback after DELETE /api/delays/:id
 function handleDeleteFlight(data) {
-  var deletedAlbumId = data._id;
+  var deletedDelayId = data._id;
   console.log('removing the following delay from the page:', deletedDelayId);
   $('div[data-delay-id=' + deletedDelayId + ']').remove();
 }

@@ -3,9 +3,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: #EEE;
+  width: 60%;
+  margin-left: 380px;
 }
 .jumbotron .container {
   height: 400px;
+
 }
 
 .inline-header {
@@ -22,6 +25,10 @@
   display: inline;
 }
 #myTopnav{
-  font-size: 250%;
+  font-size: 350%;
 
+
+}
+body{
+background-image: url(../images/jGlzr.png);
 }

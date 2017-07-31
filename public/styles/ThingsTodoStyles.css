@@ -4,23 +4,27 @@
   background-repeat: no-repeat;
   color: black;
   text-align: center;
+  width: 60%;
+  margin-left: 335px;
 
 }
 .jumbotron .container {
   height: 400px;
 }
-
+hr{
+  width: 50%;
+}
 .inline-header {
   display: inline-block;
   vertical-align: baseline;
   margin-right: 12px;
 }
 #myTopnav{
-  font-size: 250%;
+  font-size: 350%;
 
 }
 p{
-  font-size: 120%
+  font-size: 150%
 }
 
 h1 {
@@ -28,11 +32,12 @@ h1 {
   text-align: center;
   margin-top: -35px;
   font-size: 450%;
+  color: white;
 
 
 }
 .air-div{
-  margin-left: 13%;
+  margin-left: 11%;
 }
 .air-select{
   margin-left: 620px;
@@ -74,4 +79,7 @@ h1 {
 }
 li{
   list-style-type: none;
+}
+body{
+background-image: url(../images/jGlzr.png);
 }

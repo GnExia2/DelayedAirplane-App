@@ -39,8 +39,7 @@ function handleError(err){
 
 // when a delete button for a delay is clicked
 function handleDeleteDelayClick(e) {
-  var delayId = $(this).parents('.delay').data('delay-id');
-  console.log('someone wants to delete delay id=' + delayId );
+  console.log('delete attempt');
   $.ajax({
     url: '/api/delays/' + delayId,
     method: 'DELETE',
@@ -115,7 +114,7 @@ function renderDelay(delay) {
     </div>
     <!-- end of delay internal row -->
     <div class='panel-footer'>
-    <button class='btn btn-primary edit-delay edit'>Edit Flight</button>
+
     <button class='btn btn-primary save-delay edit'>Save Flight</button>
     <button class='btn btn-primary delete-delay'>Delete Flight</button>
     </div>

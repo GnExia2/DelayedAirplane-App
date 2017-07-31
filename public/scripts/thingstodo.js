@@ -4,6 +4,10 @@ $(document).ready(function(){
 //append static info when the dropdown selection changes
   $(document).on('change', '.air', function(e) {
     console.log(this.options[e.target.selectedIndex].text);
+    if(this.options[e.target.selectedIndex].text == 'Airport'){
+      $('#appendHere').empty();
+    }
+
     if(this.options[e.target.selectedIndex].text == 'SFO'){
       var sfoHtml =
       ('<p>You\'ll appreciate our eclectic mix of bookstores, gift shops, travel\

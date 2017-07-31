@@ -23,14 +23,14 @@ function create(req, res) {
     if(newDelay.airline == "Delta" || newDelay.airline == "delta"){
       newDelay.image = 'images/deltaIcon.png';
     }
-    if(newDelay.airline == "SouthWest" || newDelay.airline == "southwest" || newDelay.airline == "Southwest"){
+    else if(newDelay.airline == "SouthWest" || newDelay.airline == "southwest" || newDelay.airline == "Southwest"){
       newDelay.image = 'images/southwestIcon.jpg'
     }
-    if(newDelay.airline == "United" || newDelay.airline == "united"){
+    else if(newDelay.airline == "United" || newDelay.airline == "united"){
       newDelay.image = 'images/unitedairlinesIcon.png'
     }
 
-    if(newDelay.status == "cancelled" || newDelay.status == "cancelled"){
+    else if(newDelay.status == "cancelled" || newDelay.status == "cancelled"){
       newDelay.timeDelayed = "N/A";
 
     }
